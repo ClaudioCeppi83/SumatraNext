@@ -44,3 +44,6 @@ El siguiente paso es continuar con la migración a CMake. Esto implica analizar 
 *   Migración de `bzip2` a CMake completada con éxito.
 *   Migración de `lzma` a CMake completada con éxito.
 *   Migración de `unarrlib` a CMake completada con éxito.
+*   Migración de `CHMLib` a CMake completada con éxito.
+*   Migración de `libjpeg-turbo` a CMake completada con éxito.
+*   Migración de `libdjvu` a CMake completada con éxito.

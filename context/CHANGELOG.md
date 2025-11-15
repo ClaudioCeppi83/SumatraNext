@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Migrated `bzip2` to CMake.
 - Migrated `lzma` to CMake.
 - Migrated `unarrlib` to CMake.
+- Migrated `CHMLib` to CMake.
+- Migrated `libjpeg-turbo` to CMake.
+- Migrated `libdjvu` to CMake.
 
 ## [0.1.0] - 2025-11-15
 ### Added

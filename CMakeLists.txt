@@ -22,5 +22,7 @@ add_subdirectory(ext/bzip2)
 add_subdirectory(ext/lzma/C)
 add_subdirectory(ext/unarr)
 add_subdirectory(ext/CHMLib)
+add_subdirectory(ext/libjpeg-turbo)
+add_subdirectory(ext/libdjvu)
 
 # Por ahora, este archivo solo establece la base del proyecto.
