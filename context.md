@@ -17,7 +17,7 @@ El roadmap detallado se gestiona a través de los Issues de GitHub. Las fases pr
 ## Estado Actual
 
 ### **Fase Actual:** Fase 0: Fundación y Estrategia
-### **Hito Actual:** Hito 2: Creación de los Documentos Guía
+### **Hito Actual:** Hito 3: Configuración del Entorno y Validación
 
 ### **Decisiones Clave Tomadas:**
 *   **Nombre del Proyecto:** SumatraNext
@@ -25,12 +25,13 @@ El roadmap detallado se gestiona a través de los Issues de GitHub. Las fases pr
 *   **Estrategia de Ramas:** `main` (estable), `develop` (desarrollo principal).
 *   **Versionamiento:** Semántico (SemVer).
 *   **Documentación:** `README.md` (público), `CHANGELOG.md` (historial de cambios), `context.md` (guía interna).
+*   **Entorno de Desarrollo:** Visual Studio Build Tools 2022 (compilación por línea de comandos con MSBuild).
 
 ---
 
 ## Siguiente Paso Concreto
 
-El siguiente paso es **confirmar que el entorno de desarrollo está correctamente configurado** y que el proyecto original compila y se ejecuta sin problemas desde nuestro nuevo repositorio. Esto corresponde al **Hito 3 de la Fase 0**.
+El siguiente paso es que el usuario **compile el proyecto desde la línea de comandos** y **ejecute el `.exe` generado**. Esto validará que el entorno de desarrollo está correctamente configurado.
 
 ---
 
@@ -38,6 +39,7 @@ El siguiente paso es **confirmar que el entorno de desarrollo está correctament
 *   Repositorio `SumatraNext` creado en GitHub.
 *   Código fuente original de SumatraPDF clonado y subido a `SumatraNext`.
 *   Rama `develop` creada y subida.
-*   `README.md` creado.
+*   `README.md` creado y actualizado con instrucciones de compilación por línea de comandos.
 *   `CHANGELOG.md` creado.
-*   `context.md` creado (este mismo archivo).
+*   `context.md` creado y actualizado (este mismo archivo).
+*   `dummy.pdf` creado para pruebas de ejecución.
