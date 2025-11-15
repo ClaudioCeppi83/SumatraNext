@@ -1,6 +1,4 @@
-if(NOT DEFINED NASM)
-  set(NASM ${NASM_EXECUTABLE} CACHE PATH "Path to NASM/YASM executable")
-endif()
+set(NASM "${NASM_EXECUTABLE}")
 
 if(SIMD_X86_64)
   set(NAFLAGS -fwin64 -DWIN64 -D__x86_64__ -I${CMAKE_SOURCE_DIR}/win/
