@@ -1,5 +1,5 @@
 if(NOT DEFINED NASM)
-  set(NASM nasm CACHE PATH "Path to NASM/YASM executable")
+  set(NASM ${NASM_EXECUTABLE} CACHE PATH "Path to NASM/YASM executable")
 endif()
 
 if(SIMD_X86_64)
