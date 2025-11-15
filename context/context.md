@@ -43,4 +43,5 @@ El siguiente paso es iniciar el **Análisis del Código y Creación del Backlog 
 *   `CHANGELOG.md` creado.
 *   `context.md` creado y actualizado (este mismo archivo).
 *   `dummy.pdf` creado para pruebas de ejecución y posteriormente eliminado tras la validación del entorno.
-*   **Compilación exitosa del proyecto SumatraNext.**
+*   Compilación exitosa del proyecto SumatraNext.
+*   Limpieza de los artefactos de compilación (`out/` directory).
