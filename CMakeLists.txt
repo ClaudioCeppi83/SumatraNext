@@ -16,4 +16,6 @@ project(SumatraNext VERSION 0.1.0 LANGUAGES C CXX)
 # Iremos añadiendo subdirectorios y definiendo los "targets"
 # de forma incremental.
 
+add_subdirectory(ext/zlib)
+
 # Por ahora, este archivo solo establece la base del proyecto.
