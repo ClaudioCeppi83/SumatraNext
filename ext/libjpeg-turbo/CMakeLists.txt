@@ -196,7 +196,7 @@ if(WITH_JAVA)
   add_subdirectory(java)
 endif()
 
-add_subdirectory(sharedlib)
+#add_subdirectory(sharedlib)
 
 add_library(jpeg-static STATIC ${JPEG_SOURCES} ${SIMD_OBJS})
 if(NOT MSVC)
@@ -441,46 +441,46 @@ add_custom_target(testclean COMMAND ${CMAKE_COMMAND} -P
 # Installer
 #
 
-if(MSVC)
-  set(INST_PLATFORM "Visual C++")
-  set(INST_NAME ${CMAKE_PROJECT_NAME}-${VERSION}-vc)
-  set(INST_REG_NAME ${CMAKE_PROJECT_NAME})
-elseif(MINGW)
-  set(INST_PLATFORM GCC)
-  set(INST_NAME ${CMAKE_PROJECT_NAME}-${VERSION}-gcc)
-  set(INST_REG_NAME ${CMAKE_PROJECT_NAME}-gcc)
-  set(INST_DEFS -DGCC)
-endif()
+#if(MSVC)
+#  set(INST_PLATFORM "Visual C++")
+#  set(INST_NAME ${CMAKE_PROJECT_NAME}-${VERSION}-vc)
+#  set(INST_REG_NAME ${CMAKE_PROJECT_NAME})
+#elseif(MINGW)
+#  set(INST_PLATFORM GCC)
+#  set(INST_NAME ${CMAKE_PROJECT_NAME}-${VERSION}-gcc)
+#  set(INST_REG_NAME ${CMAKE_PROJECT_NAME}-gcc)
+#  set(INST_DEFS -DGCC)
+#endif()
 
-if(64BIT)
-  set(INST_PLATFORM "${INST_PLATFORM} 64-bit")
-  set(INST_NAME ${INST_NAME}64)
-  set(INST_REG_NAME ${INST_DIR}64)
-  set(INST_DEFS ${INST_DEFS} -DWIN64)
-endif()
+#if(64BIT)
+#  set(INST_PLATFORM "${INST_PLATFORM} 64-bit")
+#  set(INST_NAME ${INST_NAME}64)
+#  set(INST_REG_NAME ${INST_DIR}64)
+#  set(INST_DEFS ${INST_DEFS} -DWIN64)
+#endif()
 
-if(WITH_JAVA)
-  set(INST_DEFS ${INST_DEFS} -DJAVA)
-endif()
+#if(WITH_JAVA)
+#  set(INST_DEFS ${INST_DEFS} -DJAVA)
+#endif()
 
-if(MSVC_IDE)
-  set(INST_DEFS ${INST_DEFS} "-DBUILDDIR=${CMAKE_CFG_INTDIR}\\")
-else()
-  set(INST_DEFS ${INST_DEFS} "-DBUILDDIR=")
-endif()
+#if(MSVC_IDE)
+#  set(INST_DEFS ${INST_DEFS} "-DBUILDDIR=\${CMAKE_CFG_INTDIR}\\")
+#else()
+#  set(INST_DEFS ${INST_DEFS} "-DBUILDDIR=")
+#endif()
 
-STRING(REGEX REPLACE "/" "\\\\" INST_DIR ${CMAKE_INSTALL_PREFIX}) 
+#STRING(REGEX REPLACE "/" "\\\\" INST_DIR ${CMAKE_INSTALL_PREFIX}) 
 
-configure_file(release/libjpeg-turbo.nsi.in libjpeg-turbo.nsi @ONLY)
+#configure_file(release/libjpeg-turbo.nsi.in libjpeg-turbo.nsi @ONLY)
 
-if(WITH_JAVA)
-  set(JAVA_DEPEND java)
-endif()
-add_custom_target(installer
-  makensis -nocd ${INST_DEFS} libjpeg-turbo.nsi
-  DEPENDS jpeg jpeg-static turbojpeg turbojpeg-static rdjpgcom wrjpgcom
-    cjpeg djpeg jpegtran tjbench ${JAVA_DEPEND}
-  SOURCES libjpeg-turbo.nsi)
+#if(WITH_JAVA)
+#  set(JAVA_DEPEND java)
+#endif()
+#add_custom_target(installer
+#  makensis -nocd ${INST_DEFS} libjpeg-turbo.nsi
+#  DEPENDS jpeg jpeg-static turbojpeg turbojpeg-static rdjpgcom wrjpgcom
+#    cjpeg djpeg jpegtran tjbench ${JAVA_DEPEND}
+#  SOURCES libjpeg-turbo.nsi)
 
 install(TARGETS jpeg-static turbojpeg turbojpeg-static rdjpgcom wrjpgcom tjbench
   ARCHIVE DESTINATION lib
