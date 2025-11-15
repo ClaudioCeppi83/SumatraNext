@@ -16,8 +16,8 @@ El roadmap detallado se gestiona a través de los Issues de GitHub. Las fases pr
 
 ## Estado Actual
 
-### **Fase Actual:** Fase 0: Fundación y Estrategia
-### **Hito Actual:** Hito 4: Análisis del Código y Creación del Backlog
+### **Fase Actual:** Fase 1: Refactorización Técnica
+### **Hito Actual:** Hito 1: Migración a CMake
 
 ### **Decisiones Clave Tomadas:**
 *   **Nombre del Proyecto:** SumatraNext
@@ -31,17 +31,10 @@ El roadmap detallado se gestiona a través de los Issues de GitHub. Las fases pr
 
 ## Siguiente Paso Concreto
 
-El siguiente paso es iniciar el **Análisis del Código y Creación del Backlog (Hito 4)**. Esto implica explorar la base de código de SumatraPDF para entender su estructura, identificar áreas clave para nuestras mejoras y crear los Issues correspondientes en GitHub.
+El siguiente paso es continuar con la migración a CMake. Esto implica analizar los proyectos de la solución de Visual Studio (`.vcxproj`) para identificar sus archivos fuente, dependencias y configuraciones, y replicarlos en archivos `CMakeLists.txt` secundarios.
 
 ---
 
 ## Historial de Acciones Recientes
-*   Repositorio `SumatraNext` creado en GitHub.
-*   Código fuente original de SumatraPDF clonado y subido a `SumatraNext`.
-*   Rama `develop` creada y subida.
-*   `README.md` creado y actualizado con instrucciones de compilación por línea de comandos.
-*   `CHANGELOG.md` creado.
-*   `context.md` creado y actualizado (este mismo archivo).
-*   `dummy.pdf` creado para pruebas de ejecución y posteriormente eliminado tras la validación del entorno.
-*   Compilación exitosa del proyecto SumatraNext.
-*   Limpieza de los artefactos de compilación (`out/` directory).
+*   **Fase 0 completada:** Entorno de desarrollo validado y artefactos de compilación limpiados.
+*   **Inicio de la Fase 1:** Creado el archivo `CMakeLists.txt` raíz como primer paso de la migración.
