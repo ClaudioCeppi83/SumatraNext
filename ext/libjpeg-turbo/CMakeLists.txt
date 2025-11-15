@@ -6,6 +6,7 @@ cmake_minimum_required(VERSION 2.8.8)
 cmake_policy(SET CMP0022 OLD)
 
 project(libjpeg-turbo C)
+set(NASM_EXECUTABLE "C:/Program Files/NASM/nasm.exe")
 set(VERSION 1.3.1)
 
 if(MINGW OR CYGWIN)
