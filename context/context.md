@@ -37,4 +37,6 @@ El siguiente paso es continuar con la migración a CMake. Esto implica analizar 
 
 ## Historial de Acciones Recientes
 *   **Fase 0 completada:** Entorno de desarrollo validado y artefactos de compilación limpiados.
-*   **Inicio de la Fase 1:** Creado el archivo `CMakeLists.txt` raíz como primer paso de la migración.
+*   Inicio de la Fase 1: Creado el archivo `CMakeLists.txt` raíz como primer paso de la migración.
+*   Migración de `zlib` a CMake completada con éxito.
+*   Corregido el error de rutas de inclusión en `libwebp` CMakeLists.txt.

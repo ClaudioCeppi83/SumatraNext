@@ -58,9 +58,9 @@ add_library(libwebp STATIC
     src/utils/utils.c
 )
 
-# Add the src directory to the include path
+# Add the current directory to the include path
 target_include_directories(libwebp PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 # Add preprocessor definitions
