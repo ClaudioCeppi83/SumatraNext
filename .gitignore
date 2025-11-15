@@ -13,6 +13,7 @@ scripts/secrets.json
 out.txt
 out/
 builds/
+build/
 mupdf/generated/
 vs2022/.vs/
 vs2022-clang/.vs/

@@ -17,5 +17,6 @@ project(SumatraNext VERSION 0.1.0 LANGUAGES C CXX)
 # de forma incremental.
 
 add_subdirectory(ext/zlib)
+add_subdirectory(ext/libwebp)
 
 # Por ahora, este archivo solo establece la base del proyecto.
