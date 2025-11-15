@@ -17,7 +17,7 @@ El roadmap detallado se gestiona a través de los Issues de GitHub. Las fases pr
 ## Estado Actual
 
 ### **Fase Actual:** Fase 0: Fundación y Estrategia
-### **Hito Actual:** Hito 3: Configuración del Entorno y Validación
+### **Hito Actual:** Hito 4: Análisis del Código y Creación del Backlog
 
 ### **Decisiones Clave Tomadas:**
 *   **Nombre del Proyecto:** SumatraNext
@@ -31,7 +31,7 @@ El roadmap detallado se gestiona a través de los Issues de GitHub. Las fases pr
 
 ## Siguiente Paso Concreto
 
-El siguiente paso es que el usuario **compile el proyecto desde la línea de comandos** y **ejecute el `.exe` generado**. Esto validará que el entorno de desarrollo está correctamente configurado.
+El siguiente paso es iniciar el **Análisis del Código y Creación del Backlog (Hito 4)**. Esto implica explorar la base de código de SumatraPDF para entender su estructura, identificar áreas clave para nuestras mejoras y crear los Issues correspondientes en GitHub.
 
 ---
 
@@ -43,3 +43,4 @@ El siguiente paso es que el usuario **compile el proyecto desde la línea de com
 *   `CHANGELOG.md` creado.
 *   `context.md` creado y actualizado (este mismo archivo).
 *   `dummy.pdf` creado para pruebas de ejecución.
+*   **Compilación exitosa del proyecto SumatraNext.**

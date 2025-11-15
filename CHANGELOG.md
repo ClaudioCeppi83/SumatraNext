@@ -10,3 +10,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cloned original SumatraPDF source code.
 - Created `develop` branch.
 - Initial `README.md`, `CHANGELOG.md`, and `context.md` files.
+- Successfully set up build environment and compiled the project.
