@@ -20,5 +20,6 @@ add_subdirectory(ext/zlib)
 add_subdirectory(ext/libwebp)
 add_subdirectory(ext/bzip2)
 add_subdirectory(ext/lzma/C)
+add_subdirectory(ext/unarr)
 
 # Por ahora, este archivo solo establece la base del proyecto.

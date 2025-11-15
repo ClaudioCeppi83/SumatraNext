@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed include path issue in `libwebp` CMakeLists.txt.
 - Migrated `libwebp` to CMake.
 - Migrated `bzip2` to CMake.
+- Migrated `lzma` to CMake.
 
 ## [0.1.0] - 2025-11-15
 ### Added
