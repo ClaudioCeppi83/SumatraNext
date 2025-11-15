@@ -11,3 +11,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Created `develop` branch.
 - Initial `README.md`, `CHANGELOG.md`, and `context.md` files.
 - Successfully set up build environment and compiled the project.
+- Removed `dummy.pdf` after environment validation.
